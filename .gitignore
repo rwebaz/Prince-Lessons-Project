@@ -1,5 +1,5 @@
 #
-# Template Dtd 12-15-17
+# Template Dtd 12-20-17
 #
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 #
@@ -618,4 +618,7 @@ npm-debug.log
 # bundle install
 # gemfile
 # gemfile.lock
+#
+# Prince XML Output files
+*.pdf
 #

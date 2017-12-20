@@ -1,0 +1,316 @@
+/* Css Template: Charas parvati */
+
+/* Links */
+a:link {color: darkblue; } /* unvisited link */
+a:visited {color: lawngreen; } /* visited link */
+a:hover {color: lightblue; } /* mouse over link */
+a:active {color: red; } /* selected link */
+
+/* Headings */
+h1 {
+  font-size:2.5em;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+h2 {
+  font-size:1.875em;
+  font-style: oblique;
+  text-align: center;
+  color: maroon;
+  margin: 30px;
+}
+
+h3 {
+  font-size:1.375em;
+  text-align: center;
+  /* color: mediumvioletred; */
+  color: maroon;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 10px;
+  border: 5px solid #004B23; /* Forest Green */
+  /* border: 5px solid hotpink; */
+  page-break-before: always;
+}
+
+/* IDs */
+#feature {
+  float: left;
+  width: 120px;
+  margin: 15px 10px 5px 0px;
+  border: 2px solid darkblue;
+}
+
+#prince {
+  font-family: sans serif;
+  font-size: 100%;
+  font-weight: 600;
+  color: black;
+  padding: 1%;
+  background-color: cornsilk;
+  /* border: 2px solid darkblue; */
+  border: 3px groove #CC6600; /* Ashley Gold */
+  /* page-break-inside: avoid; */
+  /* prince-pdf-page-layout: single-page; */
+}
+
+/* Classes */
+
+/* Set the rule for a custom <hr /> 'hard return' tag */
+.green-groove {
+  border: 1px groove green;
+}
+
+/* Directional Text Classes */
+
+.text-left {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-justify {
+  text-align: right;
+}
+
+p.citation {
+  font-size: 1.25em;
+  font-style: oblique;
+  text-align: center;
+  color: navy;
+  padding: 5px;
+  border: 10px solid red;
+}
+
+p.cordial {
+  font-size: 1.25em;
+  font-style: oblique;
+  text-align: left;
+  color: black;
+  padding: 1%;
+  /* border: 10px solid red; */
+  border: none;
+}
+
+p.signature {
+  font-size: 1.25em;
+  font-style: oblique;
+  text-align: center;
+  color: black;
+  padding: 1%;
+  /* border: 3px groove #CC6600; Ashley Gold */
+  /* border: none; */
+}
+
+p.social-small {
+  font-size: 0.875em;
+  font-style: normal;
+  text-align: center;
+  color: black;
+  padding: 1%;
+  /* border: 10px solid red; */
+  border: none;
+}
+
+p.social-large {
+  font-size: 1.25em;
+  font-style: normal;
+  text-align: center;
+  color: black;
+  padding: 1%;
+  /* border: 10px solid red; */
+  border: none;
+}
+
+p.source {
+  font-size: 0.875em;
+  font-style: normal;
+  text-align: right;
+  color: black;
+  padding: 1%;
+  /* border: 10px solid red; */
+  border: none;
+}
+
+p.storyline {
+  font-size: 1.25em;
+  font-style: italic;
+  text-align: center;
+  color: navy;
+  padding: 5px;
+  border: 10px solid green;
+}
+
+/* Unordered Lists */
+ul {
+  /* list-style-type: disc; */
+  /* list-style-type: none; */
+  /* list-style-position: inside; */
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.375em;
+  line-height: 1.375em;
+}
+
+/* Ordered Lists */
+ol {
+  /* list-style-type: none; */
+  /* list-style-type: lower-roman; */
+  /* list-style-position: inside; */
+  padding-left: 1cm;
+  border: solid 2px darkgreen;
+}
+
+/* List Items */
+
+li {
+  /* background-image: url("");
+  background-repeat: no-repeat;   
+  background-position: 0 0; */
+  text-align: left;
+  text-indent: 1cm;
+  padding-left: 0.80em;
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: none;
+  border-left: solid 1px black;
+}
+
+li.last {
+  border-bottom: solid 1px black;
+}
+
+/* Note. The class `li.inside` sets the `list-style-position` to inside for all 'li`.
+  Therefore, the list marker is rendered inside the principal box of the `li`
+  Remember, when the marker position is placed `inside`, it is rendered inside the principal box of the `li`.
+  If you wish the marker to appear inside the principal box of `ol` ...
+  Then, make sure to give `ol` enough left padding or `li` enough left margin.
+*/
+
+li.inside {
+  list-style-position: inside;
+}
+
+/* Note. The class `li.outside` sets the `list-style-position` to outside for all 'li'.
+  Therefore, the list marker is rendered outside the principal box of the `li`.
+  Remember, when the marker position is placed `outside`, it is rendered outside the principal box of the `li`.
+*/
+
+li.outside {
+  list-style-position: outside;
+}
+
+/* List Items: Markers 
+    Note. By default ... All `List Markers` are rendered outside the list item in the left margin area for `ol`.
+    If the CSS property `list-style-position` has a value of `inside` ...
+    Then, the marker is rendered as the `first inline box` inside the list item.
+*/
+
+li::marker {
+  /* width: 2.4cm; */
+  width: 32px;
+}
+
+li.image_marker::marker { 
+  content: url("../images/rasta-leaf-32-x-32.png");
+}
+
+li.left::marker {
+	text-align: left;
+}
+
+li.center::marker {
+  text-align: center;
+}
+
+li.right::marker {
+  text-align: right;
+}
+
+li.text_marker::marker { 
+    content: "Number" counter(list-item);
+} 
+
+/* Pagination */
+
+@page {
+  /* size: 960px 1280px portrait; */
+  size: 10.0in 11.0in landscape;
+
+  @top-center {
+    content: prince-script(datestamp)
+  }
+
+  @bottom-left {
+      content: "Title: Charas parvati";
+  }
+
+  @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+  }
+}
+
+/* Comment out
+@page:first {
+  @bottom-left { content: normal }
+  @bottom-right { content: normal }
+} */
+
+/* Comment out
+@page:nth(2) {
+  @bottom-left { content: normal }
+  @bottom-right { content: normal }
+} */
+
+div.chapter {
+  page: chapter;
+  prince-page-group: start;
+}
+
+@page chapter {
+  @bottom {
+    content: counter(page);
+  }
+}
+
+@page chapter:first {
+  @bottom {
+    /* content: normal; */
+    content: counter(page);
+  }
+}
+
+/* Comment out
+@page chapter:second {
+  @bottom {
+      content: counter(page);
+  }
+}
+
+@page chapter:third {
+  @bottom {
+    content: counter(page);
+  }
+}
+
+@page chapter:fourth {
+  @bottom {
+    content: counter(page);
+  }
+}
+
+@page chapter:fifth {
+  @bottom {
+    content: counter(page);
+  }
+}
+ 
+@page chapter:sixth {
+  @bottom {
+    content: counter(page);
+  }
+} */
