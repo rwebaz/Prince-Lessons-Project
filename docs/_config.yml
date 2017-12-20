@@ -6,8 +6,8 @@
 theme: "jekyll-theme-cayman"
 # repository: https://www.github.com/rwebaz/Prince-Lessons-Project
 title: "Prince Lessons Project"
-tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM, Kramdown, and Prince XML engines"
-description: "A GitHub repo of Lessons and Articles that emphasize both the GFM, Kramdown, and Prince XML engines"
+tagline: "A GitHub repo of Lessons and Articles that emphasize the GFM, Kramdown, and Prince XML engines"
+description: "A GitHub repo of Lessons and Articles that emphasize the GFM, Kramdown, and Prince XML engines"
 twitter:
     username: "mminail"
 author:
